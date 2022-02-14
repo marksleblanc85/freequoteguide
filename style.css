@@ -1,0 +1,487 @@
+html, body, div, span, object, iframe,
+h1, span, h3, h4, h5, h3, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font-weight:normal;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    color:#333;
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* end reset */
+p {
+    font-family:'Montserrat','Gotham',Arial, Helvetica, sans-serif;
+    font-size:14px;
+    line-height:26px
+}
+h1, h2, h3 {
+    font-family:'Montserrat','Gotham',Arial, Helvetica, sans-serif;
+    font-weight:normal
+}
+
+h4, h5, h6 {
+    color:#7fbb42;
+    font-family:'Montserrat','Gotham',Arial, Helvetica, sans-serif;
+    letter-spacing:-1px;
+    margin:0;
+}
+.left {float:left}
+.right {float:right}
+.fix {clear:both}
+.bold {font-weight:700}
+.caps {text-transform:uppercase}
+.width {
+    margin:0 auto;
+    width:960px;
+}
+#header {
+    background-color:#fff;
+    border-bottom:10px solid #7fbb42;
+    box-shadow:0 1px 10px #494949;
+    left:0;
+    position:fixed;
+    top:0;
+    padding:16px 0;
+    width:100%;
+    z-index:100
+}
+#header img {
+    float:left
+}
+
+#header h5 {
+    float:right;
+    font-size:36px;
+    line-height:50px
+}
+#header .mobileshow {
+    font-family:'Montserrat','Gotham',Arial, Helvetica, sans-serif;
+    font-size:1.3em;
+    font-weight:bold;
+    margin-top:-10px
+}
+#header .mobileshow span {
+    color:#7fbb42;
+    font-weight:normal;
+}
+#carousel {
+    padding-top:95px;
+}
+#carousel .width {position:relative}
+#slideshow img {
+    position:absolute !important;
+    top:0 !important
+}
+#pager {
+    height:117px;
+    margin-top:3px;
+    padding-left:3px
+}
+#pager a {
+    display:block;
+    float:left;
+    height:117px;
+    margin-right:3px;
+    position:relative;
+    width:117px;
+}
+#pager .activeSlide .cover {
+    background:url(images/cover-bg.png) repeat;
+    height:100%;
+    left:0;
+    position:absolute;
+    top:0;
+    width:100%;
+}
+#pager img {
+    display:block;
+    float:left;
+}
+#pager img.last {margin-right:0}
+#intro p {margin:20px 0}
+#intro h1 {
+    font-size:24px;
+    padding:10px 0 20px;
+    text-align:center
+}
+#intro img.icon {
+    display:block;
+    margin:15px auto;
+    width:54px;
+}
+.sep {
+    background:url(images/sep-bg.png) repeat-x;
+}
+#cats-list li {
+    background:url(images/freequote-icon-bg.png) no-repeat bottom right;
+    border-left:16px solid #7fbb42;
+    box-shadow:0 2px 4px 1px #d8d8d8;
+    float:left;
+    list-style:none;
+    margin:20px 3%;
+    padding:0 0 0 2%;
+    width:40%
+}
+#cats-list li:hover,
+#cats-list li.active {
+    border-left:16px solid #92cd56;
+}
+#cats-list li a {
+    display:block;
+    height:82px;
+    padding-top:30px;
+    text-decoration:none
+}
+#cats-list li a h6 {
+    border-bottom:1px solid #7fbb41;
+    color:#333;
+    display:inline;
+    font-size:16px;
+    font-weight:normal;
+}
+#callout {
+    background:url(images/green-trans-bg.png) repeat;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    left:90px; 
+    padding:30px;
+    position:absolute;
+    top:120px;
+    width:700px;
+    z-index:50;
+}
+#callout-mobile {
+    background:#7fbb42;
+    padding:10px 0
+}
+#callout h1,
+#callout-mobile h1 {
+    color:#fff;
+    font-size:24px;
+    margin-bottom:0;
+    text-align:center
+}
+#callout h2,
+#callout-mobile h2 {
+    margin-bottom:0;
+    margin-top:4px;
+    text-align:center
+}
+#callout h2 a,
+#callout-mobile h2 a {
+    color:#000 !important;
+    font-size:24px;
+    margin-bottom:0;
+    margin-top:0;
+    text-decoration:none;
+    text-align:center
+}
+#callout-mobile h2 {font-size:20px}
+#footer {
+    background-color:#7fbb41;
+    margin-top:40px;
+    padding:20px 0
+}
+#footer p {color:#000}
+#collapse {
+    background-color:#eeeeee;
+    display:none;
+}
+#collapse #cat {
+    min-height:593px;
+    position:relative;
+}
+#collapse #cat .copy {display:none}
+#collapse .close {
+    background:url(images/collapse-close.png) no-repeat;
+    height:16px;
+    position:absolute;
+    right:12px;
+    top:12px;
+    width:16px
+}
+#collapse .close:hover {cursor:pointer}
+.window-installation {background:url(images/window-installation-collapse.jpg) no-repeat;}
+.bathroom-remodeling {background:url(images/bathroom-remodeling-collapse.jpg) no-repeat;}
+.kitchen-refinishing {background:url(images/cabinet-refinishing-collapse.jpg) no-repeat;}
+.window-treatment {background:url(images/window-treatments-collapse.jpg) no-repeat;}
+.hvac-installation {background:url(images/hvac-installation-collapse.jpg) no-repeat;}
+.home-appliances {background:url(images/home-appliances-collapse.jpg) no-repeat;}
+.roofing {background:url(images/roofing-collapse.jpg) no-repeat;}
+.sunrooms {background:url(images/sunrooms-collapse.jpg) no-repeat;}
+
+.window-treatment #window-treatment.copy,
+.bathroom-remodeling #bathroom-remodeling.copy,
+.kitchen-refinishing #kitchen-refinishing.copy,
+.window-installation #window-installation.copy,
+.hvac-installation #hvac-installation.copy,
+.home-appliances #home-appliances.copy,
+.roofing #roofing.copy,
+.sunrooms #sunrooms.copy {
+   display:block !important;
+}
+
+#collapse .copy {
+    background-color:#fff;
+    overflow:visible;
+    float:right;
+    margin:80px 40px 0 0;
+    padding:30px;
+    width:530px;
+}
+#collapse .copy p {
+    font-size:13px;
+    line-height:17px;
+    margin:10px 0
+}
+#collapse .copy h5 {
+    color:#000;
+    font-size:24px;
+}
+#collapse .copy h6 {
+    background:url(images/copy-left-arrow.png) no-repeat left center;
+    color:#000;
+    font-size:17px;
+    margin-left: -42px;
+    padding: 12px 0 13px 41px;
+}
+#formcontainer {
+    background-color:#7fbb42;
+    float:left;
+    height:430px;
+    margin-top:50px;
+    padding:30px 30px 0 10px;
+    width:240px
+}
+#formcontainer h3 {
+    background:url(images/form-top-arrow.png) no-repeat left top;
+    color:#000;
+    font-size:16px;
+    font-weight:normal;
+    line-height:22px;
+    margin:-40px 0 20px 0;
+    padding:40px 0 0 24px;
+}
+.form {
+    padding-left:20px;
+    position:relative;
+}
+.form li {
+    list-style:none;
+    margin:10px 0
+}
+.form li .text {
+    border:1px solid #979797;
+    border-radius:3px;
+    -webkit-border-radius: 3px;
+    padding:3px 2%;
+    width:96%;
+}
+.form li .text.error,
+.form li select.error {
+    border:1px solid #aa0000;
+}
+.form li select {
+    border:1px solid #979797;
+    border-radius:3px;
+    -webkit-border-radius: 3px;
+    padding:3px 2%;
+    width:100%;
+}
+.form li label {
+    color:#000;
+    display:inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:9px;
+    line-height:9px;
+    padding-top:5px;
+    text-align:right;
+}
+.form li .checkbox {
+    float:left;
+    margin-right:10px
+}
+.form .submit {
+    background-color:#fff;
+    border:0;
+    color:#000;
+    display:block;
+    font-family:'Montserrat','Gotham',Arial, Helvetica, sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    margin-top:20px;
+    padding:7px 20px;
+    text-decoration:none;
+    width:64px
+}
+.form li.relative {position:relative}
+.form .feedback {
+    background-color:#fff;
+    display:none;
+    top:0px;
+    padding:10px;
+    position:absolute;
+    left:140px;
+    width:250px;
+}
+.form .submit:hover {cursor:pointer}
+.mobilehide {display:block}
+.mobileshow {display:none}
+@media only screen and (min-width:200px) and (max-width:600px) {
+    .mobilehide {display:none !important}
+    .mobileshow {display:block !important}
+    .width {
+        padding:0 5% !important;
+        width:90% !important;
+    }
+    #header {height:auto !important}
+    #header img  {
+        max-width:100% !important;
+        min-width:280px !important;
+        width:25% !important
+    }
+    #header .mobileshow {font-size:100% !important}
+    #slideshow {display:none}
+    #categories .width {
+        padding:0 !important;
+        width:100% !important;
+    }
+    #cats-list li {
+        border-left:0 !important;
+        border-top:5px solid #7fbb42;
+        box-shadow:0 !important;
+        margin:0 !important;
+        width:98% !important    
+    }
+     #slideshow img {height:auto !important}
+     #pager {
+        height:auto !important;
+        padding-left:0 !important
+    }
+     #pager.width {
+        padding:0 !important;
+        width:100% !important
+    }
+     #pager a {
+        margin-right:0 !important;
+        height:auto !important;
+        width:20% !important
+    }
+     #pager img {
+        height:auto !important;
+        width:100% !important
+    }
+    .slide-5,
+    .slide-6,
+    .slide-7,
+    .slide-8 {
+        display:none !important
+    }
+    #callout {
+        background-color:#7fbb42 !important;
+        left:auto !important;
+        position:static !important;
+        top:auto !important;
+    }
+    #collapse {background-color:#fff}
+    #collapse #cat {background:transparent !important}
+    #formcontainer {
+        padding:30px 7% !important;
+        width:86% !important
+    }
+    #formcontainer h3 {
+        background:url(images/form-top-arrow-m.png) no-repeat left top;
+    }
+    #collapse .width {
+        padding:0 !important;
+        width:100% !important
+    }
+    #collapse .copy {
+        margin:0 !important;
+        padding:20px 5% !important;
+        width:90% !important
+    }
+    #collapse .copy h6 {margin-left:0 !important}
+    #collapse .close {top:0 !important}
+}
